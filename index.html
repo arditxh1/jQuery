@@ -4,41 +4,72 @@
 	<title>
 		Jquery
 	</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<input type="text" placeholder="projekt" id="textbox">
+	<div id="Div_Input"><input type="text" placeholder="Enter a title for this card…" id="textbox"></div>
 
 	<div id="main"> 
-		<div id="top-bar">
-			<h1>To Do</h1>
-			<h1>Doing</h1>
-			<h1>Done</h1>
-			<h1>Testing</h1>
-			<h1>Deployed</h1>
+		<div id="block1">
+			<div class="titles">
+				<h1>To Do</h1>
+				<img src="t.png" width="22" height="22">
+			</div>
+			<div id="list1" class="connectedSortable">
+				<div id="item">Nice</div>
+			</div>
 		</div>
-		<div id="bot-bar">
-			<ul id="list1" class="connectedSortable">
-				<li id="item">Nice</li>
-			</ul>
-			<ul id="list2" class="connectedSortable">
-				<li id="item">Nice</li>
-			</ul>
-			<ul id="list3" class="connectedSortable">
-				<li id="item">Nice</li>
-			</ul>
-			<ul id="list4" class="connectedSortable">
-				<li id="item">Nice</li>
-			</ul>
-			<ul id="list5" class="connectedSortable">
-				<li id="item">Nice</li>
-			</ul>
+		<div id="block2">
+			<div class="titles">
+				<h1 class="Title">Doing</h1>
+				<img src="t.png" width="22" height="22">
+			</div>
+			<div id="list2" class="connectedSortable">
+				<div id="item">Nice</div>
+			</div>
 		</div>
+		<div id="block3">
+			<div class="titles">
+				<h1 class="Title">Done</h1>
+				<img src="t.png" width="22" height="22">
+			</div>
+			<div id="list3" class="connectedSortable">
+				<div id="item">Nice</div>
+			</div>
+		</div>
+		<div id="block4">
+			<div class="titles">
+				<h1 class="Title">Testing</h1>
+				<img src="t.png" width="22" height="22">
+			</div>
+			<div id="list4" class="connectedSortable">
+				<div id="item">Nice</div>
+			</div>
+		</div>
+		<div id="block5">
+			<div class="titles">
+				<h1 class="Title">Deployed</h1>
+				<img src="t.png" width="22" height="22">
+			</div>
+			<div id="list5" class="connectedSortable">
+				<div id="item">Nice</div>
+			</div>
+		</div>
+	</div>
+
+	<button id="btn">NIce</button>
+
+	<div id="myModal" class="modal">
+		<h1>Nice</h1>
 	</div>
 
 <script src="jquery-3.3.1.js"></script>
 <script src="jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 <script src="main.js"></script>
+
 
 </body>
 </html>
