@@ -13,12 +13,11 @@
 	<div id="main"> 
 		<div id="block1">
 			<div class="titles">
-				<h1 class="Title">To Do</h1>
+				<h1 class="Title">ToDo</h1>
 				<img src="t.png" width="22" height="22">
 			</div>
-			<div id="list1" class="connectedSortable">
-				<div id="item">Nice</div>
-				<div id="item">Nice</div>
+			<div id="ToDo" class="connectedSortable">
+				<h6 class="space">.</h6>
 			</div>
 		</div>
 		<div id="block2">
@@ -26,8 +25,8 @@
 				<h1 class="Title">Doing</h1>
 				<img src="t.png" width="22" height="22">
 			</div>
-			<div id="list2" class="connectedSortable">
-				<div id="item">Nice</div>
+			<div id="Doing" class="connectedSortable">
+				<h6 class="space">.</h6>
 			</div>
 		</div>
 		<div id="block3">
@@ -35,8 +34,8 @@
 				<h1 class="Title">Done</h1>
 				<img src="t.png" width="22" height="22">
 			</div>
-			<div id="list3" class="connectedSortable">
-				<div id="item">Nice</div>
+			<div id="Done" class="connectedSortable">
+				<h6 class="space">.</h6>
 			</div>
 		</div>
 		<div id="block4">
@@ -44,8 +43,8 @@
 				<h1 class="Title">Testing</h1>
 				<img src="t.png" width="22" height="22">
 			</div>
-			<div id="list4" class="connectedSortable">
-				<div id="item">Nice</div>
+			<div id="Testing" class="connectedSortable">
+				<h6 class="space">.</h6>
 			</div>
 		</div>
 		<div id="block5">
@@ -53,16 +52,30 @@
 				<h1 class="Title">Deployed</h1>
 				<img src="t.png" width="22" height="22">
 			</div>
-			<div id="list5" class="connectedSortable">
-				<div id="item">Nice</div>
+			<div id="Deployed" class="connectedSortable">
+				<h6 class="space">.</h6>
+				<div class="item" id="clone"><h1 id="itemText">Nice</h1><img id="edit" src="edit.png"></div>
 			</div>
 		</div>
 	</div>
 
 	<button id="btn">NIce</button>
-
 	<div id="myModal" class="modal">
-		<h1>Nice</h1>
+		<div>
+			<h1 id="title"></h1>
+			<img src="">
+			<h1 id="where"></h1>
+		</div>
+		<div id="description">
+			<img src="">
+			<h1>Description</h1>
+			<button>Edit</button>
+		</div>
+		<div id="comment">
+			<img src="">
+			<h1>Add Comment</h1>
+			<textarea></textarea>
+		</div>
 	</div>
 
 <script src="jquery-3.3.1.js"></script>

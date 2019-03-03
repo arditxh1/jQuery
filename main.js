@@ -41,17 +41,24 @@ function hide(){
 
 
 //SORTABLE--------------------------------------------------------
-$('#list1, #list2, #list3, #list4, #list5').sortable({
-	connectWith: ".connectedSortable"
+$('#ToDo, #Doing, #Done, #Testing, #Deployed').sortable({
+	connectWith: ".connectedSortable",
+	receive: function(event, ui) {
+        $(ui.item).attr('id', $(this).attr('id') + 'Item')
+        console.log($(this))
+    }
 })
 
 
 function addData(){
 	if ($('#textbox').val() != '') {
-		$("#item").clone().appendTo( "#list1").attr("id", 'item').text($('#textbox').val())
+		$("#clone").clone(true).appendTo( "#ToDo").attr("class", 'item').attr('id', 'ToDoItem').find( "h1" ).text($('#textbox').val())
 	}
 }
-$('#btn').click(function(){
+//MODEL==================================
+
+$("#edit").bind('click', function(){
+	$('#title').text($(this).parent().find('#itemText').text())
+	$('#where').text('in list' + $(this).parent().attr('id').replace('Item',''))
 	$('#myModal').modal();
 })
-
