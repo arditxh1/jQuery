@@ -135,3 +135,24 @@ input[type=text]{
 	height: 1%;
 	margin: 0;
 }
+
+#location{
+	display: flex;
+}
+
+#myModal{
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+
+#firstModal,#secondModal{
+	display: flex;
+	flex-direction: row;
+}
+
+#firstModalText,#secondModalText{
+	margin-left: 20px;
+}
+
+#inList

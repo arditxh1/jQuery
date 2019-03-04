@@ -59,6 +59,6 @@ function addData(){
 
 $("#edit").bind('click', function(){
 	$('#title').text($(this).parent().find('#itemText').text())
-	$('#where').text('in list' + $(this).parent().attr('id').replace('Item',''))
+	$('#where').text($(this).parent().attr('id').replace('Item',''))
 	$('#myModal').modal();
 })
